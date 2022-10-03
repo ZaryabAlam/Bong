@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'home.dart';
+
 class First extends StatefulWidget {
   @override
   State<First> createState() => _FirstState();
@@ -42,7 +44,10 @@ class _FirstState extends State<First> {
                       borderRadius: BorderRadius.circular(40),
                       color: Color(0xFF02c0f5)),
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => Home()));
+                    },
                     child: Text("Lets begin"),
                     style: ElevatedButton.styleFrom(
                         primary: Colors.transparent,
