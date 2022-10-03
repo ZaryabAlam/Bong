@@ -40,7 +40,7 @@ class _FirstState extends State<First> {
                   width: _w * 0.9,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(40),
-                      color: Colors.cyan),
+                      color: Color(0xFF02c0f5)),
                   child: ElevatedButton(
                     onPressed: () {},
                     child: Text("Lets begin"),
