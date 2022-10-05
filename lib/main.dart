@@ -1,3 +1,4 @@
+import 'package:bong/appbar.dart';
 import 'package:bong/first.dart';
 import 'package:bong/splash.dart';
 import 'package:flutter/material.dart';
@@ -13,6 +14,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+        appBar: PreferredSize(
+            preferredSize: Size.fromHeight(80.0), child: Appbar1()),
         body: Home(),
       ),
     );
