@@ -8,7 +8,7 @@ class Home extends StatelessWidget {
     final _w = MediaQuery.of(context).size.width;
 
     return Scaffold(
-      backgroundColor: Colors.white10,
+      backgroundColor: Colors.white,
       appBar: AppBar(
         centerTitle: false,
         elevation: 0,
@@ -44,7 +44,64 @@ class Home extends StatelessWidget {
         ),
       ),
 //////////////////////////////// Body /////////////////////////////////////////////////
-      body: Column(),
+      body: Stack(
+        children: [
+          Row(
+            children: [
+              Column(
+                children: [
+                  Text("0311 2136873"),
+                  Row(
+                    children: [
+                      Text(
+                        "102",
+                        style: TextStyle(
+                            fontSize: 40,
+                            color: Color(0xFF02c0f5),
+                            fontWeight: FontWeight.bold),
+                      ),
+                      Text("PKR"),
+                    ],
+                  ),
+                  Text("Expires on 31st Dec, 2099"),
+                ],
+              ),
+              Column(
+                children: [
+                  Container(
+                    height: _h * 0.045,
+                    width: _w * 0.25,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(40),
+                        color: Color(0xFF02c0f5)),
+                    child: ElevatedButton(
+                      onPressed: () {},
+                      child: Text("Recharge"),
+                      style: ElevatedButton.styleFrom(
+                          primary: Colors.transparent,
+                          shadowColor: Colors.transparent),
+                    ),
+                  ),
+                  Container(
+                    height: _h * 0.045,
+                    width: _w * 0.25,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(40),
+                        color: Color(0xFF02c0f5)),
+                    child: ElevatedButton(
+                      onPressed: () {},
+                      child: Text("Loan"),
+                      style: ElevatedButton.styleFrom(
+                          primary: Colors.transparent,
+                          shadowColor: Colors.transparent),
+                    ),
+                  ),
+                ],
+              )
+            ],
+          ),
+        ],
+      ),
 //////////////////////////////// Nav Bar /////////////////////////////////////////////////
       bottomNavigationBar: BottomNavigationBar(
           selectedItemColor: Colors.grey[700],

@@ -1,4 +1,5 @@
 import 'package:bong/first.dart';
+import 'package:bong/splash.dart';
 import 'package:flutter/material.dart';
 import 'home.dart';
 
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: First(),
+        body: Home(),
       ),
     );
   }
