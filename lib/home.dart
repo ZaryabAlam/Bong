@@ -1,4 +1,5 @@
 import 'package:bong/appbar.dart';
+import 'package:bong/card1.dart';
 import 'package:bong/extra.dart';
 import 'package:flutter/material.dart';
 
@@ -9,7 +10,7 @@ class Home extends StatelessWidget {
     final _w = MediaQuery.of(context).size.width;
 
     return Scaffold(
-      backgroundColor: Colors.white,
+      // backgroundColor: Colors.white,
 //////////////////////////////// Body /////////////////////////////////////////////////
 ///////////////////////////////// Top /////////////////////////////////////////////////
       body: SingleChildScrollView(
@@ -86,45 +87,22 @@ class Home extends StatelessWidget {
                       ),
                     ],
                   ),
-                )
+                ),
+              ],
+            ),
+            Column(
+              children: [
+                SizedBox(
+                  height: 100,
+                ),
+/////////////////////////////////////// Cards //////////////////////////////////////////////////
+                Card1()
               ],
             ),
           ],
         ),
       ),
 //////////////////////////////// Nav Bar /////////////////////////////////////////////////
-      bottomNavigationBar: BottomNavigationBar(
-          selectedItemColor: Colors.grey[700],
-          showSelectedLabels: false,
-          showUnselectedLabels: false,
-          elevation: 2,
-          items: [
-            BottomNavigationBarItem(
-                icon: GestureDetector(
-                    onTap: () {}, child: Icon(Icons.home_rounded)),
-                label: "Home"),
-            BottomNavigationBarItem(
-                icon: GestureDetector(
-                    onTap: () {},
-                    child: Icon(Icons.data_usage_rounded, color: Colors.grey)),
-                label: "Usage"),
-            BottomNavigationBarItem(
-                icon: GestureDetector(
-                    onTap: () {},
-                    child: Icon(Icons.add_box_rounded, color: Colors.grey)),
-                label: "Bundle"),
-            BottomNavigationBarItem(
-                icon: GestureDetector(
-                    onTap: () {},
-                    child:
-                        Icon(Icons.new_releases_rounded, color: Colors.grey)),
-                label: "Latest"),
-            BottomNavigationBarItem(
-                icon: GestureDetector(
-                    onTap: () {},
-                    child: Icon(Icons.more_rounded, color: Colors.grey)),
-                label: "More"),
-          ]),
     );
   }
 }
