@@ -28,7 +28,7 @@ class _Card1State extends State<Card1> {
             shadowColor: Colors.black87,
             color: Colors.white,
             child: Container(
-              height: _h * 0.21,
+              height: _h * 0.23,
               width: _w * 0.28,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -72,7 +72,7 @@ class _Card1State extends State<Card1> {
             shadowColor: Colors.black87,
             color: Colors.white,
             child: Container(
-              height: _h * 0.21,
+              height: _h * 0.23,
               width: _w * 0.28,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -116,7 +116,7 @@ class _Card1State extends State<Card1> {
             shadowColor: Colors.black87,
             color: Colors.white,
             child: Container(
-              height: _h * 0.21,
+              height: _h * 0.23,
               width: _w * 0.28,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,

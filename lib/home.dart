@@ -1,5 +1,6 @@
 import 'package:bong/appbar.dart';
 import 'package:bong/card1.dart';
+import 'package:bong/card2.dart';
 import 'package:bong/extra.dart';
 import 'package:flutter/material.dart';
 
@@ -90,15 +91,25 @@ class Home extends StatelessWidget {
                 ),
               ],
             ),
+////////////////////////////////////// Cards //////////////////////////////////////////////////
             Column(
               children: [
                 SizedBox(
-                  height: 100,
+                  height: _h * 0.13,
                 ),
-/////////////////////////////////////// Cards //////////////////////////////////////////////////
                 Card1()
               ],
             ),
+/////////////////////////////////////// Card 2 //////////////////////////////////////////////////
+            Column(
+              children: [
+                SizedBox(
+                  height: _h * 0.39,
+                ),
+                Card2()
+              ],
+            ),
+///////////////////////////////////////////////////////////////////////////////////////////
           ],
         ),
       ),
