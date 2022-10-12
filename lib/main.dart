@@ -1,4 +1,7 @@
 import 'package:bong/appbar.dart';
+import 'package:bong/cate.dart';
+import 'package:bong/cate1.dart';
+import 'package:bong/cate3.dart';
 import 'package:bong/slide1.dart';
 import 'package:bong/card2.dart';
 import 'package:bong/first.dart';
@@ -17,7 +20,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: PreferredSize(
             preferredSize: Size.fromHeight(80.0), child: Appbar1()),
-        body: Home(),
+        body: ContactsPage(),
         bottomNavigationBar: BottomNavigationBar(
             selectedItemColor: Colors.grey[700],
             showSelectedLabels: false,

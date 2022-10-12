@@ -15,7 +15,7 @@ class _Card2State extends State<Card2> {
       elevation: 15,
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(40)),
       shadowColor: Colors.black87,
-      color: Colors.cyan,
+      color: Color(0xFF02c0f5),
       child: Container(
         height: _h * 0.065,
         width: _w * 0.99,
