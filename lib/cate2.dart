@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class Cate2 extends StatefulWidget {
   @override
@@ -16,14 +17,25 @@ List<String> names = [
   "More",
 ];
 List<IconData> icons = [
-  Icons.card_giftcard_rounded,
-  Icons.history_rounded,
-  Icons.shopping_bag_rounded,
-  Icons.account_balance_wallet_rounded,
-  Icons.fingerprint_rounded,
-  Icons.airplanemode_on_rounded,
-  Icons.sim_card_rounded,
-  Icons.view_comfy_rounded,
+  (FontAwesomeIcons.gifts),
+  FontAwesomeIcons.accessibleIcon,
+  FontAwesomeIcons.accessibleIcon,
+  FontAwesomeIcons.accessibleIcon,
+  FontAwesomeIcons.accessibleIcon,
+  FontAwesomeIcons.accessibleIcon,
+  FontAwesomeIcons.accessibleIcon,
+  FontAwesomeIcons.accessibleIcon,
+];
+
+List colors = [
+  Colors.red,
+  Colors.green,
+  Colors.yellow,
+  Colors.red,
+  Colors.green,
+  Colors.yellow,
+  Colors.red,
+  Colors.green
 ];
 
 class _Cate2State extends State<Cate2> {
@@ -43,7 +55,7 @@ class _Cate2State extends State<Cate2> {
               children: [
                 Icon(
                   icons[index],
-                  size: 50,
+                  color: colors[index],
                 ),
                 Text(
                   names[index],
