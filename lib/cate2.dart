@@ -17,25 +17,25 @@ List<String> names = [
   "More",
 ];
 List<IconData> icons = [
-  (FontAwesomeIcons.gifts),
-  FontAwesomeIcons.accessibleIcon,
-  FontAwesomeIcons.accessibleIcon,
-  FontAwesomeIcons.accessibleIcon,
-  FontAwesomeIcons.accessibleIcon,
-  FontAwesomeIcons.accessibleIcon,
-  FontAwesomeIcons.accessibleIcon,
-  FontAwesomeIcons.accessibleIcon,
+  (FontAwesomeIcons.gift),
+  FontAwesomeIcons.userClock,
+  FontAwesomeIcons.store,
+  FontAwesomeIcons.solidCreditCard,
+  FontAwesomeIcons.fingerprint,
+  FontAwesomeIcons.globeAsia,
+  FontAwesomeIcons.cloudscale,
+  FontAwesomeIcons.boxOpen,
 ];
 
 List colors = [
-  Colors.red,
-  Colors.green,
-  Colors.yellow,
-  Colors.red,
-  Colors.green,
-  Colors.yellow,
-  Colors.red,
-  Colors.green
+  Colors.redAccent[200],
+  Colors.blue[600],
+  Colors.deepOrange[300],
+  Colors.green[900],
+  Colors.black,
+  Colors.lightGreen[500],
+  Colors.red[900],
+  Colors.brown[400]
 ];
 
 class _Cate2State extends State<Cate2> {
@@ -53,9 +53,17 @@ class _Cate2State extends State<Cate2> {
             padding: EdgeInsets.all(1),
             child: Column(
               children: [
-                Icon(
-                  icons[index],
-                  color: colors[index],
+                Container(
+                  decoration: BoxDecoration(
+                      color: Colors.black12,
+                      borderRadius: BorderRadius.circular(20)),
+                  height: 60,
+                  width: 60,
+                  child: Icon(
+                    icons[index],
+                    color: colors[index],
+                    size: 35,
+                  ),
                 ),
                 Text(
                   names[index],

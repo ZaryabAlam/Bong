@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: PreferredSize(
             preferredSize: Size.fromHeight(80.0), child: Appbar1()),
-        body: Cate2(),
+        body: Cate1(),
         bottomNavigationBar: BottomNavigationBar(
             selectedItemColor: Colors.grey[700],
             showSelectedLabels: false,
