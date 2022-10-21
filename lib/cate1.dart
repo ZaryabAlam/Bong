@@ -14,7 +14,7 @@ List<String> names = [
   "Shop",
   "Balance",
   "Biomatric",
-  "International",
+  "Internation",
   "Load",
   "More",
 ];
@@ -43,6 +43,8 @@ List colors = [
 class _Cate1State extends State<Cate1> {
   @override
   Widget build(BuildContext context) {
+    final _h = MediaQuery.of(context).size.height;
+    final _w = MediaQuery.of(context).size.width;
     return Card(
       elevation: 15,
       color: Colors.white,
@@ -50,8 +52,8 @@ class _Cate1State extends State<Cate1> {
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
       child: Container(
         margin: EdgeInsets.all(10),
-        height: 200,
-        width: 500,
+        height: _h * 0.18,
+        width: _w * 0.85,
         child: GridView.count(
           crossAxisCount: 4,
           crossAxisSpacing: 20,
@@ -69,18 +71,19 @@ class _Cate1State extends State<Cate1> {
                   child: Container(
                     decoration: BoxDecoration(
                         color: Colors.grey[200],
-                        borderRadius: BorderRadius.circular(20)),
-                    height: 60,
-                    width: 60,
+                        borderRadius: BorderRadius.circular(15)),
+                    height: 38,
+                    width: 38,
                     child: Icon(
                       icons[index],
                       color: colors[index],
-                      size: 35,
+                      size: 25,
                     ),
                   ),
                 ),
                 Text(
                   names[index],
+                  style: TextStyle(fontSize: 10),
                 )
               ],
             );
