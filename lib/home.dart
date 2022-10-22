@@ -1,7 +1,5 @@
-import 'package:bong/appbar.dart';
 import 'package:bong/card1.dart';
 import 'package:bong/card2.dart';
-import 'package:bong/extra.dart';
 import 'package:bong/slide1.dart';
 import 'package:bong/cate1.dart';
 import 'package:flutter/material.dart';
