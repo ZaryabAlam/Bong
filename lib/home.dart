@@ -1,8 +1,11 @@
 import 'package:bong/card1.dart';
 import 'package:bong/card2.dart';
+import 'package:bong/cate2.dart';
 import 'package:bong/slide1.dart';
 import 'package:bong/cate1.dart';
 import 'package:flutter/material.dart';
+
+import 'appbar.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -11,6 +14,9 @@ class Home extends StatelessWidget {
     final _w = MediaQuery.of(context).size.width;
 
     return Scaffold(
+//////////////////////////////// Appbar /////////////////////////////////////////////////
+      appBar:
+          PreferredSize(preferredSize: Size.fromHeight(80.0), child: Appbar1()),
       // backgroundColor: Colors.white,
 //////////////////////////////// Body /////////////////////////////////////////////////
 ///////////////////////////////// Top /////////////////////////////////////////////////
@@ -109,7 +115,7 @@ class Home extends StatelessWidget {
                 Card2()
               ],
             ),
-///////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////Sldie Show////////////////////////////////////////////////////
 
             Column(
               children: [
@@ -119,7 +125,7 @@ class Home extends StatelessWidget {
                 Slide1(),
               ],
             ),
-//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////Menu Category////////////////////////////////////////////////////
             Column(
               children: [
                 SizedBox(
@@ -131,13 +137,55 @@ class Home extends StatelessWidget {
                 ),
               ],
             ),
-//////////////////////////////////////////////////////////////////////////////////////////
-
-//////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////Offers List////////////////////////////////////////////////////
+            Column(
+              children: [
+                SizedBox(
+                  height: _h * 0.95,
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [Cate2()],
+                ),
+              ],
+            ),
           ],
         ),
       ),
 //////////////////////////////// Nav Bar /////////////////////////////////////////////////
+      bottomNavigationBar: BottomNavigationBar(
+          selectedItemColor: Colors.grey[700],
+          showSelectedLabels: false,
+          showUnselectedLabels: false,
+          elevation: 2,
+          items: [
+            BottomNavigationBarItem(
+                icon: GestureDetector(
+                    onTap: () {}, child: Icon(Icons.home_rounded)),
+                label: "Home"),
+            BottomNavigationBarItem(
+                icon: GestureDetector(
+                    onTap: () {},
+                    child: Icon(Icons.data_usage_rounded, color: Colors.grey)),
+                label: "Usage"),
+            BottomNavigationBarItem(
+                icon: GestureDetector(
+                    onTap: () {},
+                    child: Icon(Icons.add_box_rounded, color: Colors.grey)),
+                label: "Bundle"),
+            BottomNavigationBarItem(
+                icon: GestureDetector(
+                    onTap: () {},
+                    child:
+                        Icon(Icons.new_releases_rounded, color: Colors.grey)),
+                label: "Latest"),
+            BottomNavigationBarItem(
+                icon: GestureDetector(
+                    onTap: () {},
+                    child: Icon(Icons.more_rounded, color: Colors.grey)),
+                label: "More"),
+          ]),
+//////////////////////////////// End /////////////////////////////////////////////////
     );
   }
 }

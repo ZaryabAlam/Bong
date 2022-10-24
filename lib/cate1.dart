@@ -53,7 +53,7 @@ class _Cate1State extends State<Cate1> {
       child: Container(
         margin: EdgeInsets.all(10),
         height: _h * 0.18,
-        width: _w * 0.85,
+        width: _w * 0.80,
         child: GridView.count(
           crossAxisCount: 4,
           crossAxisSpacing: 20,

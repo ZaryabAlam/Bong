@@ -1,5 +1,4 @@
-import 'package:bong/appbar.dart';
-import 'package:bong/cate2.dart';
+import 'package:bong/first.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,44 +9,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: true,
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: PreferredSize(
-            preferredSize: Size.fromHeight(80.0), child: Appbar1()),
-        body: Cate2(),
-        bottomNavigationBar: BottomNavigationBar(
-            selectedItemColor: Colors.grey[700],
-            showSelectedLabels: false,
-            showUnselectedLabels: false,
-            elevation: 2,
-            items: [
-              BottomNavigationBarItem(
-                  icon: GestureDetector(
-                      onTap: () {}, child: Icon(Icons.home_rounded)),
-                  label: "Home"),
-              BottomNavigationBarItem(
-                  icon: GestureDetector(
-                      onTap: () {},
-                      child:
-                          Icon(Icons.data_usage_rounded, color: Colors.grey)),
-                  label: "Usage"),
-              BottomNavigationBarItem(
-                  icon: GestureDetector(
-                      onTap: () {},
-                      child: Icon(Icons.add_box_rounded, color: Colors.grey)),
-                  label: "Bundle"),
-              BottomNavigationBarItem(
-                  icon: GestureDetector(
-                      onTap: () {},
-                      child:
-                          Icon(Icons.new_releases_rounded, color: Colors.grey)),
-                  label: "Latest"),
-              BottomNavigationBarItem(
-                  icon: GestureDetector(
-                      onTap: () {},
-                      child: Icon(Icons.more_rounded, color: Colors.grey)),
-                  label: "More"),
-            ]),
+        body: First(),
       ),
     );
   }
